@@ -11,3 +11,9 @@ if [ "$N" -le 0 ]; then
         echo "ERROR: Invalid input or number is not positive"
 	exit 1
 fi
+
+while [ "$N" -gt 0 ]; do
+	echo "$N"
+	N=$((N - 1))
+done
+
