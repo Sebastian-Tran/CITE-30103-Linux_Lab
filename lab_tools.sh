@@ -8,5 +8,9 @@ show_user() {
 	echo "USERNAME: $USER | HOSTNAME: $HOSTNAME"
 }
 
-show_date
-show_user
+main() {
+	show_date
+	show_user
+}
+
+main
