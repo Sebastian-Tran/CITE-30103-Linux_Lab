@@ -13,4 +13,15 @@ then
 	echo "File exists"
 else
 	echo "File does not exist."
+	read -p "Would you like to create it? (y/n): " ANSWER
+	if [ "$ANSWER" = "y" ]
+	then
+		touch "$FILENAME"
+		echo "File $FILENAME created."
+	else
+		echo "No file created."
+		exit 0
+	fi
 fi
+
+
