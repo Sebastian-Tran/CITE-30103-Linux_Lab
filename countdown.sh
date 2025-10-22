@@ -17,3 +17,4 @@ while [ "$N" -gt 0 ]; do
 	N=$((N - 1))
 done
 
+echo "Liftoff!"
